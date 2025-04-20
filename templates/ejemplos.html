@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplos reales</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 Ejemplos reales con la Distribución de Poisson</h1>
+    <p>Haz clic en un ejemplo para ver cómo se aplica Poisson en situaciones del mundo real:</p>
+
+    <div class="tarjetas">
+      <form action="/calcular" method="POST">
+        <input type="hidden" name="lambda" value="30">
+        <input type="hidden" name="k" value="25">
+        <button class="card-btn">📞 Call Center<br><small>30 llamadas por hora</small><br><small>Contexto: Este ejemplo está relacionado con un call center. Se utiliza la Distribución de Poisson para modelar el número de llamadas que llegan a un call center en una hora. Se sabe que, en promedio, llegan 30 llamadas por hora (λ = 30), y queremos calcular la probabilidad de que lleguen exactamente 25 llamadas (k = 25) en una hora.</small></button>
+      </form>
+
+      <form action="/calcular" method="POST">
+        <input type="hidden" name="lambda" value="12">
+        <input type="hidden" name="k" value="15">
+        <button class="card-btn">🍽 Restaurante<br><small>12 clientes por hora</small><br><small>Contexto: Este ejemplo se refiere a un restaurante donde llegan en promedio 12 clientes por hora (λ = 12). Queremos conocer la probabilidad de que lleguen exactamente 15 clientes (k = 15) en una hora. Este ejemplo puede ayudar a los administradores de restaurantes a planificar el número de empleados necesarios, el inventario o la organización del espacio según el volumen esperado de clientes, basándose en la distribución de Poisson.</small></button>
+      </form>
+
+      <form action="/calcular" method="POST">
+        <input type="hidden" name="lambda" value="2">
+        <input type="hidden" name="k" value="3">
+        <button class="card-btn">📚 Errores tipográficos<br><small>2 errores por página</small><br><small>Contexto: Este ejemplo está relacionado con la revisión de textos, específicamente con errores tipográficos. Se utiliza la Distribución de Poisson para modelar la cantidad de errores tipográficos por página de un libro, artículo o documento. Si el promedio es de 2 errores por página (λ = 2), queremos calcular la probabilidad de encontrar exactamente 3 errores (k = 3) en una página.</small></button>
+      </form>
+    </div>
+
+    <br>
+    <a href="/" class="btn">🔙 Volver al inicio</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Qué es Poisson?</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📘 ¿Qué es la Distribución de Poisson?</h1>
+
+    <p>La <strong>Distribución de Poisson</strong> es una herramienta matemática que nos ayuda a predecir la probabilidad de que un evento ocurra cierta cantidad de veces en un tiempo determinado.</p>
+
+    <hr>
+
+    <h2>🔢 ¿Cuándo se usa?</h2>
+    <ul class="lista-iconos">
+      <li>📞 Cuando queremos saber cuántas llamadas llegan a una línea telefónica por hora.</li>
+      <li>📚 Cuántos errores puede tener una página de un libro.</li>
+      <li>🚦 Cuántos accidentes ocurren en una intersección por mes.</li>
+    </ul>
+
+    <hr>
+
+    <h2>⚙️ Características clave</h2>
+    <ul class="lista-iconos">
+      <li>✅ Solo cuenta eventos <strong>enteros</strong> (0, 1, 2...).</li>
+      <li>🔁 Los eventos ocurren de forma <strong>independiente</strong>.</li>
+      <li>⏳ Tiene una <strong>tasa constante</strong> (ej: 5 llamadas por hora).</li>
+    </ul>
+
+    <hr>
+
+    <h2>📐 Fórmula general</h2>
+    <p class="formula">P(k; λ) = (e<sup>-λ</sup> × λ<sup>k</sup>) / k!</p>
+    <p>donde:</p>
+    <ul class="lista-iconos">
+      <li>🔹 <strong>λ (lambda)</strong>: promedio de ocurrencia (ej: 3 llamadas/hora)</li>
+      <li>🔸 <strong>k</strong>: número exacto de veces que queremos saber (ej: 4 llamadas)</li>
+      <li>🧮 <strong>k!</strong>: factorial de k</li>
+      <li>📈 <strong>e</strong>: número de Euler (~2.718)</li>
+    </ul>
+
+    <hr>
+
+    <p>💡 <strong>Ejemplo:</strong> Si una tienda recibe 5 clientes por hora, ¿cuál es la probabilidad de que lleguen exactamente 3 en una hora?</p>
+
+    <p>👉 Puedes probarlo tú mismo en la sección <a href="/calculadora"><strong>“Haz un cálculo tú mismo”</strong></a>.</p>
+
+    <br>
+    <a href="/" class="btn">🔙 Volver al inicio</a>
+  </div>
+</body>
+</html>

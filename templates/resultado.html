@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resultado</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resultado</h1>
+    <p>λ = {{ lam }}, k = {{ k }}</p>
+    <p><strong>Probabilidad:</strong> P(k;λ) = {{ prob | round(5) }}</p>
+
+    <h2>Gráfico de Poisson</h2>
+    <img src="/{{ grafica }}" alt="Gráfico de Poisson"><br><br>
+
+    <a href="/">Volver</a>
+  </div>
+</body>
+</html>
